@@ -52,8 +52,8 @@ local _aimsp_settings; _aimsp_settings = {
     },
 
     wall_check_method = {
-        raycast = false, -- uses RaycastResult:IsDescendantOf()
-        camera = true, -- uses GetPartsObscuringTarget (better)
+        raycast = true, -- uses RaycastResult:IsDescendantOf()
+        camera = false, -- uses GetPartsObscuringTarget (better)
     }, -- either of these must be true
 
     headshot_odds = {
@@ -95,7 +95,7 @@ local _aimsp_settings; _aimsp_settings = {
     max_dist = 9e9, -- 9e9 = very big
     toggle = {
         r_mouse_button = true, -- makes you have to hold right mouse button, keybind will no longer work
-        key = Enum.KeyCode.Z; -- acts as toggle
+        key = Enum.KeyCode.O; -- acts as toggle
     },
     prefer = {
         looking_at_you = false, -- will prefer whoever is looking at you "the most", threat judging
@@ -103,7 +103,7 @@ local _aimsp_settings; _aimsp_settings = {
         closest_to_you = false, -- will sometimes not work, backwards iteration will make this alot more consistent
     },
     toggle_hud_key = Enum.KeyCode.P, -- toggle drawing
-    smoothness = 4, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
+    smoothness = 7, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
     fov_size = 250; -- <450 = safezone
 
     -- esp settings
