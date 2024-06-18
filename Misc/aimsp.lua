@@ -39,8 +39,8 @@ local _aimsp_settings; _aimsp_settings = {
     loop_all_humanoids = false, -- will allow aimbot to everything that has a humanoid, likely *VERY* laggy
     max_dist = 9e9, -- 9e9 = very big
     allow_toggle = {
-        allow = false, -- turning this to false will make the aimbot toggle on right mouse button
-        key = Enum.KeyCode.Z;
+        allow = true, -- turning this to false will make the aimbot toggle on right mouse button
+        key = Enum.KeyCode.O;
     },
     prefer = {
         looking_at_you = false, -- buggy
@@ -48,17 +48,17 @@ local _aimsp_settings; _aimsp_settings = {
         closest_to_you = true, -- stable
     },
     toggle_hud_key = Enum.KeyCode.P,
-    smoothness = 3, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
+    smoothness = 10, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
     fov_size = 150; -- 150-450 = preferred
 
     -- esp settings
     use_esp = true,
     esp_toggle_key = Enum.KeyCode.O,
     rainbow_speed = 5,
-    use_rainbow = true,
+    use_rainbow = false,
     tracers = true,
     box = true,
-    name = true,
+    name = false,
     dist = true,
     health = true; -- might not work on some games
 }
