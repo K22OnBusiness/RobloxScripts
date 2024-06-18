@@ -47,20 +47,20 @@ local _aimsp_settings; _aimsp_settings = {
         closest_to_center_screen = false, -- stable
         closest_to_you = true, -- stable
     },
-    toggle_hud_key = Enum.KeyCode.P,
-    smoothness = 3, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
-    fov_size = 150; -- 150-450 = preferred
+    toggle_hud_key = Enum.KeyCode.L,
+    smoothness = 5, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
+    fov_size = 180; -- 150-450 = preferred
 
     -- esp settings
-    use_esp = true,
+    use_esp = false,
     esp_toggle_key = Enum.KeyCode.O,
     rainbow_speed = 5,
-    use_rainbow = true,
-    tracers = true,
+    use_rainbow = false,
+    tracers = false,
     box = true,
-    name = true,
+    name = false,
     dist = true,
-    health = true; -- might not work on some games
+    health = false; -- might not work on some games
 }
 
 --<- allowed modify ->--
